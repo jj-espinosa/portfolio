@@ -16,7 +16,7 @@ const Navbar = ({ darkMode, toggleDarkMode, setLanguage }) => {
   };
 
   return (
-    <nav className="flex items-center justify-end pt-6 pb-14">
+    <nav className="flex items-center justify-end pt-6 pb-16">
       <motion.div
         initial={{ x: -50, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
