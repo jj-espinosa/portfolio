@@ -24,7 +24,7 @@ const Technologies = ({ darkMode }) => {
       </motion.h2>
       <div className="min-h-[250px] lg:min-h-[575px] flex items-center justify-center relative overflow-hidden">
         <div
-          className="absolute w-[75px] h-[100px] lg:w-[150px] lg:h-[200px] top-[15%] left-[calc(50%-50px)] lg:left-[calc(50%-100px)] animate-autoRun"
+          className="absolute w-[75px] h-[100px] lg:w-[150px] lg:h-[200px] top-[15%] left-[calc(50%-40px)] lg:left-[calc(50%-100px)] animate-autoRun"
           style={{
             transformStyle: "preserve-3d",
             transform: "perspective(1000px)",

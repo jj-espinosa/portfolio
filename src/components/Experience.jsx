@@ -55,14 +55,16 @@ const Experience = () => {
                   />
                 ))}
               </ul>
-              {experience.technologies.map((technology, index) => (
-                <span
-                  className="mr-2 mt-4 rounded bg-stone-300 dark:bg-stone-900 px-2 py-1 text-sm font-medium dark:text-stone-300"
-                  key={index}
-                >
-                  {technology}
-                </span>
-              ))}
+              <div className="flex flex-wrap">
+                {experience.technologies.map((technology, index) => (
+                  <span
+                    className="mr-2 mt-4 rounded bg-stone-300 dark:bg-stone-900 px-2 py-1 text-sm font-medium dark:text-stone-300"
+                    key={index}
+                  >
+                    {technology}
+                  </span>
+                ))}
+              </div>
             </motion.div>
           </div>
         ))}

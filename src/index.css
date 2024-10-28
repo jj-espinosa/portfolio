@@ -14,6 +14,6 @@
 
 @media (max-width: 1024px) {
   .technology-item {
-    transform: rotateY(var(--angle)) translateZ(200px);
+    transform: rotateY(var(--angle)) translateZ(150px);
   }
 }

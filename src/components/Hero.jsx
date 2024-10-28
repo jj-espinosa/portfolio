@@ -70,7 +70,7 @@ const Hero = () => {
             />
             <motion.div
               variants={containerVariants}
-              className="flex items-center justify-center lg:justify-start w-full gap-2"
+              className="flex flex-wrap items-center justify-center lg:justify-start w-full gap-2"
             >
               <a
                 href="./juanjesusresume.pdf"
