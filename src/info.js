@@ -1,45 +1,45 @@
 export const technologies = [
   {
-    src: "/reactLogo.svg",
+    src: "./reactLogo.svg",
     alt: "React logo",
   },
   {
-    src: "/tailwindCSSLogo.svg",
+    src: "./tailwindCSSLogo.svg",
     alt: "Tailwind css logo",
   },
   {
-    src: "/expressLogo.svg",
+    src: "./expressLogo.svg",
     alt: "Express logo",
     style: {
       filter: "brightness(0) contrast(1.2)",
     },
   },
   {
-    src: "/fastapiLogo.svg",
+    src: "./fastapiLogo.svg",
     alt: "FastAPI logo",
   },
   {
-    src: "/gitLogo.svg",
+    src: "./gitLogo.svg",
     alt: "Git logo",
   },
   {
-    src: "/javaLogo.svg",
+    src: "./javaLogo.svg",
     alt: "Java logo",
   },
   {
-    src: "/pythonLogo.svg",
+    src: "./pythonLogo.svg",
     alt: "Python logo",
   },
   {
-    src: "/javascriptLogo.svg",
+    src: "./javascriptLogo.svg",
     alt: "Javascript logo",
   },
   {
-    src: "/typescriptLogo.svg",
+    src: "./typescriptLogo.svg",
     alt: "Typescript logo",
   },
   {
-    src: "/nodejsLogo.svg",
+    src: "./nodejsLogo.svg",
     alt: "NodeJs logo",
   },
 ];

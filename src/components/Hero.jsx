@@ -73,7 +73,7 @@ const Hero = () => {
               className="flex items-center justify-center lg:justify-start w-full gap-2"
             >
               <a
-                href="/juanjesusresume.pdf"
+                href="./juanjesusresume.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 download
