@@ -79,7 +79,7 @@ const Hero = () => {
                 download
                 className="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-teal-800 to-indigo-400 dark:from-indigo-600 dark:to-teal-200 group-hover:from-teal-800 group-hover:to-indigo-400 dark:group-hover:from-indigo-600 dark:group-hover:to-teal-200 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-teal-300 dark:focus:ring-blue-800"
               >
-                <span className="relative px-5 py-2.5 transition-all ease-in duration-75 bg-amber-50 dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
+                <span className="relative px-5 py-2.5 transition-all ease-in duration-75 bg-orange-100 dark:bg-neutral-950 rounded-md group-hover:bg-opacity-0">
                   {t("downloadResume")}
                 </span>
               </a>

@@ -1,4 +1,4 @@
-import { useRef } from "react";
+import { useRef, useEffect } from "react";
 import {
   motion,
   useMotionTemplate,
@@ -43,11 +43,55 @@ const TiltCard = (props) => {
     y.set(0);
   };
 
+  const handleTouchMove = (e) => {
+    e.preventDefault();
+    if (!ref.current) return;
+
+    const rect = ref.current.getBoundingClientRect();
+    const width = rect.width;
+    const height = rect.height;
+
+    const touchX = e.touches[0].clientX - rect.left;
+    const touchY = e.touches[0].clientY - rect.top;
+
+    const mouseX = touchX * ROTATION_RANGE;
+    const mouseY = touchY * ROTATION_RANGE;
+
+    const rX = (mouseY / height - HALF_ROTATION_RANGE) * -1;
+    const rY = mouseX / width - HALF_ROTATION_RANGE;
+
+    x.set(rX);
+    y.set(rY);
+  };
+
+  useEffect(() => {
+    const element = ref.current;
+
+    // Aseguramos que el evento de scroll no ocurra en dispositivos táctiles
+    const preventScroll = (e) => e.preventDefault();
+
+    if (element) {
+      element.addEventListener("touchstart", preventScroll, { passive: false });
+      element.addEventListener("touchmove", preventScroll, { passive: false });
+    }
+
+    // Limpieza de los eventos al desmontar el componente
+    return () => {
+      if (element) {
+        element.removeEventListener("touchstart", preventScroll);
+        element.removeEventListener("touchmove", preventScroll);
+      }
+    };
+  }, []);
+
   return (
     <motion.div
       ref={ref}
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
+      onTouchStart={handleTouchMove}
+      onTouchMove={handleTouchMove}
+      onTouchEnd={handleMouseLeave}
       style={{
         transformStyle: "preserve-3d",
         transform,
