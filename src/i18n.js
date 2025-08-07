@@ -77,7 +77,7 @@ i18n.use(initReactI18next).init({
           {
             year: "2024 - Actualidad",
             role: "Desarrollador Full Stack",
-            company: "SOLUTE",
+            company: "IOON Technologies",
             description: [
               "Rediseñé de forma proactiva, usando <span class='text-teal-800 dark:text-teal-200 font-semibold'>Figma</span>, una campaña de marketing (Pop up con <span class='text-teal-800 dark:text-teal-200 font-semibold'>formulario de generación de leads</span>) distribuida en todas las marcas y países de <span class='text-teal-800 dark:text-teal-200 font-semibold'>Stellantis</span>, mejorando la <span class='text-teal-800 dark:text-teal-200 font-semibold'>responsividad</span> y la <span class='text-teal-800 dark:text-teal-200 font-semibold'>interfaz de usuario (UI)</span> y agregando <span class='text-teal-800 dark:text-teal-200 font-semibold'>microinteracciones</span> y <span class='text-teal-800 dark:text-teal-200 font-semibold'>animaciones (GSAP)</span>, lo que supuso un <span class='text-teal-800 dark:text-teal-200 font-semibold'>aumento notable en la conversión</span>.",
               "Desarrollé <span class='text-teal-800 dark:text-teal-200 font-semibold'>casos de uso (“Configuración abandonada”)</span> en <span class='text-teal-800 dark:text-teal-200 font-semibold'>Dynamic Yield</span> utilizando <span class='text-teal-800 dark:text-teal-200 font-semibold'>cookies</span> con el objetivo de que el usuario volviese al punto en el que había dejado la configuración de su vehículo, lo que <span class='text-teal-800 dark:text-teal-200 font-semibold'>aumentó considerablemente la conversión</span>.",

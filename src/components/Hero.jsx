@@ -73,7 +73,7 @@ const Hero = () => {
               className="flex flex-wrap items-center justify-center lg:justify-start w-full gap-2"
             >
               <a
-                href={t("downloadResume")}
+                href={t("resumeRoute")}
                 target="_blank"
                 rel="noopener noreferrer"
                 download
